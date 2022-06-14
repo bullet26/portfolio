@@ -1,0 +1,53 @@
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+    line-height: 60px;
+
+    &_fs14 {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &_fs14Bold {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &_fs16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &_fs20 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &_fs48 {
+        font-size: 48px;
+    }
+
+    &_white {
+        color: #ffffff;
+    }
+
+    &__section-title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,52 @@
+.overlay{
+    position: relative;
+}
+
+.modal{
+    position: absolute;
+    display: grid;
+    align-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;   
+    width: 380px;
+    min-height: 400px;
+    background: $main-color;
+    padding: 30px 40px 30px 40px;
+    &__close{
+        position: absolute;
+        font-size: 41px;
+        line-height: 21px;
+        top: 0;
+        right: -40px;
+        color: $main-color;
+        cursor: pointer;
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;        
+    }
+    &__descr{
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &_mini{
+        min-height: 143px;
+    }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+#thanks, #error {
+    display: none;   
+}

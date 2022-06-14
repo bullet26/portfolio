@@ -1,0 +1,41 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/firstSectionBg.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        }
+    &_title {
+        width: 535px;
+        margin-top: 10px;
+        text-align: right;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        padding-left: 10px;
+        @include before_circle;
+    }
+    &__btns{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+    }
+    &__link{
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        &:hover{
+            color: #000000;
+            text-decoration: none; 
+            
+        }
+    }
+}
